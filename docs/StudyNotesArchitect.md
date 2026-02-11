@@ -49,29 +49,35 @@
 
 🔹 **C. System Design Fundamentals**
 
-      Master these concepts:
-      
-      Scalability (vertical vs horizontal)
-      
-      Load balancing
-      
-      Caching (Redis)
-      
-      Rate limiting
-      
-      Circuit breaker
-      
-      Event-driven architecture
-      
-      Messaging (Kafka / SQS)
-      
-      CAP theorem
-      
-      ACID vs BASE
-      
-      Database sharding
-      
-      CQRS
+      Master these concepts:      
+      Scalability (vertical vs horizontal) - V(Single server increase) and H(multiple server based on needs)      
+      Load balancing - Distributes traffic across multiple servers.       
+      Caching (Redis) - Store frequently accessed data in memory.      
+      Rate limiting - Restricts number of requests per user/IP.      
+      Circuit breaker - Prevents cascading failure.
+              If Service B is down:
+              Service A stops calling it after threshold.      
+      Event-driven architecture - Services communicate via events.     
+      Messaging (Kafka / SQS) - Message queue system for async communication.  
+          Kafka = data streaming
+          SQS = simple async queue
+      CAP theorem -  C = Consistency
+                      A = Availability
+                      P = Partition tolerance     
+      ACID(tradeitional DB) vs BASE(NoSql)   -
+            Atomicity
+            Consistency
+            Isolation
+            Durability
+            --------------------
+            Basically Available
+            Soft state
+            Eventually consistent
+      Database sharding - Split large DB into smaller pieces.     
+      CQRS - Command Query Responsibility Segregation
+          Why?
+            Write needs consistency (DB)
+            Read needs performance (Redis)
       
       If you can explain these clearly, you're strong.
 
